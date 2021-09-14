@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas - Paint</title>
+
+  <link rel="stylesheet" href="https://eduardo-ono.github.io/eduardo-ono/bin/main.css">
+  <style>
+    canvas {
+      border: 1px lightgray solid;
+      background: lightyellow;
+      /* Centraliza horizontalmente o canvas */
+      display: block;
+      margin: auto;
+    }
+  </style>
+
+  <script src="https://eduardo-ono.github.io/eduardo-ono/bin/main.js"></script>
+  <script>
+    function desenhar() {
+
+      var canvas = document.getElementsByTagName('canvas');
+      canvas = canvas[0];
+      canvas.width = 500;
+      canvas.height = 500;
+      var ctx = canvas.getContext('2d');
+
+      // Função anônima que desenha uma linha do ponto p0 ao ponto p1, onde pn = { x: coord_x, y: coord_y }.
+      const desenharLinha = (p0, p1) => {
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = 'blue';
+        ctx.beginPath();
+        ctx.moveTo(p0.x, p0.y);
+        ctx.lineTo(p1.x, p1.y);
+        ctx.stroke();
+      }
+
+      // Objeto pincel
+      const pincel = {
+        ativo: false,
+        movendo: false,
+        pos: { x: 0, y: 0 },
+        posPrev: null
+      };
+
+      // Eventos
+      canvas.onmousedown = (evt) => {
+        pincel.ativo = true;
+      }
+
+      document.onmouseup = (evt) => {
+        pincel.ativo = false;
+      }
+
+      canvas.onmousemove = (evt) => {
+        pincel.movendo = true;
+        var cRect = canvas.getBoundingClientRect();
+        pincel.pos.x = Math.round(evt.clientX - cRect.left); // clientX é referente ao documento.
+        pincel.pos.y = Math.round(evt.clientY - cRect.top); // clientY é referente ao documento.
+        if (pincel.ativo && pincel.movendo && pincel.posPrev) {
+          desenharLinha(pincel.posPrev, pincel.pos);
+          pincel.movendo = false;
+        }
+        pincel.posPrev = { x: pincel.pos.x, y: pincel.pos.y };
+      }
+
+    } // desenhar()
+  </script>
+
+</head>
+
+<body onload="init()">
+  <header>
+    <p>Jogos Digitais > Conteúdo > JavaScript</p>
+  </header>
+  <h2>
+    Paint
+  </h2>
+  <canvas>
+    Seu navegador não tem suporte ao elemento canvas.
+  </canvas>
+  <p>
+    Fonte: Adaptado de https://www.youtube.com/watch?v=bLvDJ_a32uM
+  </p>
+  <script>
+    desenhar();
+  </script>
+</body>
+</html>
