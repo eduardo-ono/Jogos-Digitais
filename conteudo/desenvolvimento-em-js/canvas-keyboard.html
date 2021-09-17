@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas - Keyboard</title>
+
+  <link rel="stylesheet" href="https://eduardo-ono.github.io/eduardo-ono/bin/main.css">
+  <style>
+    canvas {
+      border: 1px lightgray solid;
+      background: lightyellow;
+      /* Centraliza horizontalmente o canvas */
+      display: block;
+      margin: auto;
+    }
+  </style>
+
+  <script src="https://eduardo-ono.github.io/eduardo-ono/bin/main.js"></script>
+  <script>
+    function mover() {
+
+      var canvas = document.getElementsByTagName('canvas');
+      canvas = canvas[0];
+      canvas.width = 500;
+      canvas.height = 500;
+      var ctx = canvas.getContext('2d');
+
+      // Desenha
+      var xPos = 10;
+      var yPos = 10;
+      var objWidth = 30;
+      var objHeight = 30;
+      ctx.fillStyle = '#ff5000';
+      ctx.fillRect(xPos, yPos, objWidth, objHeight);
+      ctx.stroke();
+
+      document.onkeydown = (evt) => {
+        // console.log(evt.keyCode);
+        var step = 10;
+        switch (evt.keyCode)
+        {
+          case 37:
+            if (xPos - step >= 0)
+              xPos -= step;
+            break;
+          case 39:
+            if (xPos + objWidth + step <= canvas.width)
+              xPos += step;
+            break;
+          case 38:
+            if (yPos - step >= 0)
+            yPos -= step;
+            break;
+          case 40:
+            if (yPos + objHeight + step <= canvas.height)
+              yPos += step;
+            break;
+        }
+        canvas.width = canvas.width;
+        ctx.fillStyle = '#ff5000';
+        ctx.fillRect(xPos, yPos, objWidth, objHeight);
+        ctx.stroke();
+      }
+
+    } // mover()
+  </script>
+
+</head>
+
+<body onload="init()">
+  <header>
+    <p>Jogos Digitais > Conteúdo > JavaScript</p>
+  </header>
+  <h2>
+    Canvas - Keyboard
+  </h2>
+  <canvas>
+    Seu navegador não tem suporte ao elemento canvas.
+  </canvas>
+  <p>
+    Fonte: Adaptado de https://www.youtube.com/watch?v=OFzs4unxVtU
+  </p>
+  <script>
+    mover();
+  </script>
+</body>
+</html>

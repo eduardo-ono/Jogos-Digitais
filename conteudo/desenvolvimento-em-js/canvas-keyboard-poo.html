@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas - Keyboard - POO</title>
+
+  <link rel="stylesheet" href="https://eduardo-ono.github.io/eduardo-ono/bin/main.css">
+  <style>
+    canvas {
+      border: 1px lightgray solid;
+      background: lightyellow;
+      /* Centraliza horizontalmente o canvas */
+      display: block;
+      margin: auto;
+    }
+  </style>
+
+  <script src="https://eduardo-ono.github.io/eduardo-ono/bin/main.js"></script>
+  <script>
+    function Retangulo() {
+      this.coord = { x: 0, y: 0 };
+      this.width = 20;
+      this.height = 20;
+      this.backgroundColor = '#ff5000';
+      this.desenhar = (ctx) => {
+        ctx.fillStyle = this.backgroundColor;
+        ctx.fillRect(this.coord.x, this.coord.y, this.width, this.height);
+        ctx.stroke();
+      }
+    } // Retangulo()
+
+    function mover() {
+      var canvas = document.getElementsByTagName('canvas');
+      canvas = canvas[0];
+      canvas.width = 500;
+      canvas.height = 500;
+      var ctx = canvas.getContext('2d');
+
+      // Desenha
+      var retangulo = new Retangulo();
+      retangulo.desenhar(ctx);
+
+      document.onkeydown = (evt) => {
+        // console.log(evt.keyCode);
+        var step = 10;
+        switch (evt.keyCode)
+        {
+          case 37:
+            if (retangulo.coord.x - step >= 0)
+              retangulo.coord.x -= step;
+            break;
+          case 39:
+            if (retangulo.coord.x + retangulo.width + step <= canvas.width)
+              retangulo.coord.x += step;
+            break;
+          case 38:
+            if (retangulo.coord.y - step >= 0)
+              retangulo.coord.y -= step;
+            break;
+          case 40:
+            if (retangulo.coord.y + retangulo.height + step <= canvas.height)
+              retangulo.coord.y += step;
+            break;
+        }
+        canvas.width = canvas.width;
+        retangulo.desenhar(ctx);
+      }
+
+    } // mover()
+  </script>
+
+</head>
+
+<body onload="init()">
+  <header>
+    <p>Jogos Digitais > Conteúdo > JavaScript</p>
+  </header>
+  <h2>
+    Canvas - Keyboard
+  </h2>
+  <canvas>
+    Seu navegador não tem suporte ao elemento canvas.
+  </canvas>
+  <p>
+    Fonte: Adaptado de https://www.youtube.com/watch?v=OFzs4unxVtU
+  </p>
+  <script>
+    mover();
+  </script>
+</body>
+</html>
