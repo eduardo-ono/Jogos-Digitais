@@ -34,13 +34,19 @@
     function mover() {
       var canvas = document.getElementsByTagName('canvas');
       canvas = canvas[0];
-      canvas.width = 500;
-      canvas.height = 500;
+      canvas.width = 200;
+      canvas.height = 200;
       var ctx = canvas.getContext('2d');
 
       // Desenha
       var retangulo = new Retangulo();
       retangulo.desenhar(ctx);
+
+      var retangulo2 = new Retangulo();
+      retangulo2.coord.x = 50;
+      retangulo2.coord.y = 100;
+      retangulo2.backgroundColor = '#00FF50';
+      retangulo2.desenhar(ctx);
 
       document.onkeydown = (evt) => {
         // console.log(evt.keyCode);
@@ -64,8 +70,10 @@
               retangulo.coord.y += step;
             break;
         }
+        // console.log(evt.keyCode);
         canvas.width = canvas.width;
         retangulo.desenhar(ctx);
+        retangulo2.desenhar(ctx);
       }
 
     } // mover()

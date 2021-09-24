@@ -23,14 +23,14 @@
 
       var canvas = document.getElementsByTagName('canvas');
       canvas = canvas[0];
-      canvas.width = 500;
-      canvas.height = 500;
+      canvas.width = 400;
+      canvas.height = 400;
       var ctx = canvas.getContext('2d');
 
       // Função anônima que desenha uma linha do ponto p0 ao ponto p1, onde pn = { x: coord_x, y: coord_y }.
       const desenharLinha = (p0, p1) => {
-        ctx.lineWidth = 2;
-        ctx.strokeStyle = 'blue';
+        ctx.lineWidth = 5.6;
+        ctx.strokeStyle = 'red';
         ctx.beginPath();
         ctx.moveTo(p0.x, p0.y);
         ctx.lineTo(p1.x, p1.y);
