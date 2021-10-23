@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Three.js</title>
   <link rel="stylesheet" href="../../bin/main.css">
+
   <style>
       canvas {
           display: block;
           background-color: black;
       }
   </style>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 
@@ -44,7 +46,7 @@
 
       // Cubo
       var geometry = new THREE.BoxGeometry(1, 1, 1);  // <--
-      var material = new THREE.MeshLambertMaterial({color: 0xff0000});
+      var material = new THREE.MeshLambertMaterial({color: 0x00ffff});
       var obj = new THREE.Mesh(geometry, material);
       obj.position.set(0, 0, 0);  // (x, y, z)
       obj.rotation.set(0, 0, 0);

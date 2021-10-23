@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eduardo Ono">
+    <title>Asteroids</title>
+
+    <style>
+        body {
+            margin: 5% 10% 5% 10%;
+        }
+        #asteroids {
+            background-color: black;
+        }
+    </style>
+
+    <script>
+        function init()
+        {
+            var canvas = document.getElementById('asteroids');
+            var ctx = canvas.getContext('2d');
+
+            // Desenho do Grid
+            ctx.strokeStyle = '#00FF00';
+            ctx.lineWidth = 0.2;
+
+            // Desenho das linhas verticais da grade
+            for (var x = 0; x < canvas.width; x += 10)
+            {
+                ctx.moveTo(x, 0);
+                ctx.lineTo(x, canvas.height);
+                ctx.stroke();
+                console.log(canvas.height);
+            }
+
+            // Desenho das linhas horizontais da grade
+            for (var y = 0; y < canvas.height; y += 10)
+            {
+                ctx.moveTo(0, y);
+                ctx.lineTo(canvas.width, y);
+                ctx.stroke();
+            }
+
+        }  // init()
+    </script>
+
+</head>
+
+<body onload="init()">
+    <h1>Desenvolvimento de Games</h1>
+    <hr>
+    <p>Prof. Eduardo Ono</p>
+    <p><br></p>
+    <canvas id="asteroids" width="640" height="640"></canvas>
+    
+    <p>
+        Baseado em Introducing JavaScript Game Development.
+    </p>
+
+</body>
+</html>
