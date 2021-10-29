@@ -6,7 +6,7 @@ Prof. Eduardo Ono
 
 <br>
 
-## Sugestão de Disiplinas para um Curso de Jogos Digitais 
+## Sugestão de Disiplinas para um Curso de Jogos Digitais
 
 * Princípios de Jogos Digitais
 * Português
@@ -48,3 +48,10 @@ Parallel 2   :         des4, after des1, 1d
 Parallel 3   :         des5, after des3, 1d
 Parallel 4   :         des6, after des4, 1d
 ```
+<br>
+
+## Canais do YouTube Recomendados
+
+* https://www.youtube.com/c/TheCodingTrain/videos
+
+<br>
