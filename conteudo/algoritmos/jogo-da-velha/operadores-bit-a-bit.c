@@ -77,6 +77,7 @@ int imprimirTabuleiro(char jogo[])
 
 int main()
 {
+    // Código ASCII para o desenho do tabuleiro
     char jogo[] = { 'X', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
     int i, jogada, numJogadas = 0;
     char vencedor = ' ';
