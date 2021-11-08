@@ -47,6 +47,7 @@ char verificarJogada(char jogo[])
 
 int imprimirTabuleiro(char jogo[])
 {
+    // Código ASCII para o desenho do tabuleiro
     char horLine[] = { 196, 196, 196, 197, 196, 196, 196, 197, 196, 196, 196, '\0' };
     int i;
 
@@ -72,7 +73,6 @@ int imprimirTabuleiro(char jogo[])
 
 int main()
 {
-    // Código ASCII para o desenho do tabuleiro
     char jogo[] = { 'X', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
     int i, jogada, numJogadas = 0;
     char vencedor = ' ';
