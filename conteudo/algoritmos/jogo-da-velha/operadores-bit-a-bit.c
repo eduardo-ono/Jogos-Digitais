@@ -1,8 +1,10 @@
 /*
-    Título: Jogo da Velha
-    Desenvolvido por: Eduardo Ono
-    Data: 08/11/2021
-    Atualizado em : 08/11/2021
+    Título           : Jogo da Velha
+    Descrição        : Aplicação dos "bitwise operators" no Jogo da Velha
+    Desenvolvido por : Eduardo Ono
+    Data             : 08/11/2021
+    Atualizado em    : 08/11/2021
+    OBS.             : Baseado em https://www.youtube.com/watch?v=t_PwaRMMnbo
 */
 
 #include <stdio.h>
@@ -11,6 +13,7 @@
 
 char verificarJogada(char jogo[])
 {
+    // Ternas das possíveis vitórias em valores decimais
     int ternas[] = { 
         448, // 0b111000000 - primeira linha
         56,  // 0b000111000 - segunda linha
@@ -22,17 +25,17 @@ char verificarJogada(char jogo[])
         84   // 0b001010100 - diagonal secundária
     };
     int i;
-    int jogoBin = 0;
+    int jogoDec = 0;
     char vencedor = ' ';
 
-    // Converte o jogo do jogador atual para um número decimal (jogoBin)
+    // Converte o jogo do jogador atual (jogo[0]) para um número decimal (jogoDec)
     for (i = 1; i < 10; i++)
         if (jogo[i] == jogo[0])
-            jogoBin += pow(2, 9-i);
+            jogoDec += pow(2, 9-i);
 
     // Verifica o jogo do jogador atual através do operador bit-a-bit &
     for (i = 0; i < 8; i++)
-        if ((jogoBin & ternas[i]) == ternas[i])
+        if ((jogoDec & ternas[i]) == ternas[i])
         {
             vencedor = jogo[0];
             break;
@@ -103,10 +106,11 @@ int main()
         jogo[0] = jogo[0] == 'X' ? 'O' : 'X';
     } while (vencedor == ' ' && numJogadas < 9);
 
+    // Imprime o vencedor ou empate
     if (vencedor == ' ')
         printf("Empate!\n");
     else
-        printf("O jogador '%c' foi vencedor!\n", vencedor);
+        printf("O jogador '%c' venceu!\n", vencedor);
     printf("\n");
 
     return 0;
