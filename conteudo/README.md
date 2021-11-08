@@ -6,10 +6,13 @@ Prof. Eduardo Ono
 
 ## Tópicos
 
-  * ### Conceitos
-  * ### História
-  * ### Ambiente de Desenvolvimento
-  * ### [Desenvolvimento de Jogos em JavaScript](./desenvolvimento-em-js/)
+* ### Conceitos
+
+* ### História
+
+* ### Ambiente de Desenvolvimento
+
+* ### [Desenvolvimento de Jogos em JavaScript](./desenvolvimento-em-js/)
 
 <br>
 
