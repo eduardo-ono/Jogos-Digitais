@@ -64,12 +64,7 @@ int imprimirTabuleiro(char jogo[])
     // Imprime o binário correspondente ao jogo do último jogador 
     printf("Jogo '%c': ", jogo[0]);
     for (i = 1; i < 10; i++)
-    {
-        if (jogo[i] == jogo[0])
-            printf("1");
-        else
-            printf("0");
-    }
+        printf("%d", jogo[i] == jogo[0] ? 1 : 0);
     printf("\n\n");
 
     return 0;
