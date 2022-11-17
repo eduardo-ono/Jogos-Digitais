@@ -1,0 +1,100 @@
+/* Variáveis globais */
+:root {
+    --board-background-color: red;
+    --default-tile-background-color: white;
+    --tile-background-color: #e2ebf3;
+    --selected-tile-background-color: #bbdefb;
+    --cross-tiles-background-color: #e2ebf3;
+}
+
+* {
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header {
+    height: 42px;
+    color: white;
+    background-color: blue;
+    padding: 0px 10px;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    background-color: var(--board-background-color);
+    border: 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quadrant {
+    background-color: var(--board-background-color);
+}
+
+.tile {
+    width: 48px;
+    height: 48px;
+    background-color: var(--default-tile-background-color);
+    border: 1px solid lightgray;
+    font-size: 24px;
+    font-weight: bold;
+    /* display: grid;
+    grid-template-areas:
+    "n1 n  n6"
+    "n2 n n7"
+    "n3 n n8"
+    "n4 n5 n9";
+    grid-template-columns: 15px 1fr 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile:hover {
+    background-color: aquamarine;
+}
+
+.tile * {
+    pointer-events: none;
+}
+
+.tile > div {
+    font-size: 10px;
+    font-weight: normal;
+    user-select: none;
+}
+
+#keypad {
+    width: 450px;
+    height: 50px;
+    background-color: gold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.key {
+    width: 44px;
+    height: 44px;
+    margin: 2px;
+    border: 1px solid gray;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
