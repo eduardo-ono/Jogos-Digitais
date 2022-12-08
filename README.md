@@ -10,7 +10,7 @@ Introdução a Jogos Digitais.
 
 <br>
 
-## Conteúdo (Blocos de Conhecimento)
+## Conteúdo em Módulos
 
 | Matemática |
 | --- |
