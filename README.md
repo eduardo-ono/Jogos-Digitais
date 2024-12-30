@@ -1,36 +1,38 @@
-# Jogos Digitais
+&nbsp;
 
-Prof. Eduardo Ono
+<h1 align="center">Jogos Digitais</h1>
+<h4 align="center">Prof. Eduardo Ono</h4>
+<h6 align="center"><sup><img src="https://img.shields.io/github/last-commit/eduardo-ono/Jogos-Digitais" alt="img: last-commit"></sup></h6>
 
-<br>
+&nbsp;
 
 ## Descrição
 
-Introdução a Jogos Digitais.
+Introdução ao desenvolvimento de Jogos Digitais.
 
-<br>
+&nbsp;
 
-## Conteúdo em Módulos
+## Conteúdo (em Módulos)
 
 | Matemática |
 | --- |
-| Lógica Matemática
-| [Matemática Discreta](https://github.com/eduardo-ono/Matematica-Discreta)
-| Geometria Analítica
-| Álgebra Linear
-| [Cálculo de uma Variável Real](https://github.com/eduardo-ono/Calculo-I)
-| Probabilidade e Estatística
+| Lógica Matemática |
+| [Matemática Discreta](https://github.com/eduardo-ono/Matematica-Discreta) |
+| Geometria Analítica |
+| Álgebra Linear |
+| [Cálculo de uma Variável Real](https://github.com/eduardo-ono/Calculo-I) |
+| Probabilidade e Estatística |
 
 | Física |
 | --- |
-| Física para Jogos Digitais
+| Física para Jogos Digitais |
 
 | Programação |
 | --- |
-| [Introdução à Programação](https://github.com/eduardo-ono/Introducao-a-Programacao)
-| Estrutura de Dados
-| Programação Orientada a Objetos
-| Programação Concorrente e Paralela
+| [Introdução à Programação](https://github.com/eduardo-ono/Introducao-a-Programacao) |
+| Estrutura de Dados |
+| Programação Orientada a Objetos |
+| Programação Concorrente e Paralela |
 
 | Banco de Dados |
 | --- |
@@ -46,12 +48,12 @@ Introdução a Jogos Digitais.
 
 | Jogos para Web |
 | --- |
-| [Desenvolvimento Web (Front-End)](https://github.com/eduardo-ono/Desenvolvimento-Web)
-| Desenvolvimento Web (Back-End)
+| [Desenvolvimento Web (Front-End)](https://github.com/eduardo-ono/Desenvolvimento-Web) |
+| Desenvolvimento Web (Back-End) |
 
 | Jogos para Dispositivos Móveis |
 | --- |
-| [Desenvolvimento Mobile](https://github.com/eduardo-ono/Desenvolvimento-Mopile)
+| [Desenvolvimento Mobile](https://github.com/eduardo-ono/Desenvolvimento-Mopile) |
 
 | Inteligência Artificial |
 | --- |
@@ -72,16 +74,17 @@ Introdução a Jogos Digitais.
 * Engenharia de Software
 * Projeto (Design) de Jogos Digitais
 * Desenvolvimento para Consoles
+* [Games](./conteudo/games/)
 
-<br>
+&nbsp;
 
 ## Material de Apoio
 
-<br>
+&nbsp;
 
-* https://www.w3schools.com
+* <https://www.w3schools.com>
 
-<br>
+&nbsp;
 
 ## Recursos
 
@@ -97,39 +100,41 @@ Introdução a Jogos Digitais.
 
 * STUART, Graeme. Introducing JavaScript Game Development, 2017.
 
-<br>
+&nbsp;
 
 ## Bibliografia Complementar
 
 * PERRY, Jim. [Unity Game Development Succinctly](https://www.syncfusion.com/ebooks/unity_game_development_succinctly), 2017.
 
-<br>
+&nbsp;
 
 ## Filmes e Documentários Recomendados
 
 | Thumbs | Título |
 | :-: | --- |
-| [![img](https://img.youtube.com/vi/WXuK6gekU1Y/default.jpg)](https://www.youtube.com/watch?v=WXuK6gekU1Y) | AlphaGo - The Movie / Full Documentary |
-| [![img](https://img.youtube.com/vi/blQzi9EQ99c/default.jpg)](https://www.youtube.com/watch?v=blQzi9EQ99c) | <sup>[Time2Chill]</sup> [Console Wars 2020 Documentary](https://www.youtube.com/watch?v=blQzi9EQ99c)<br><sub>(1:31:35, YouTube, Out/2020)</sub>
-| [![img](https://img.youtube.com/vi/roBkg-iPrbw/default.jpg)](https://www.youtube.com/watch?v=roBkg-iPrbw) | <sup>[Ahoy]</sup> [Trackers: The Sound of 16-Bit](https://www.youtube.com/watch?v=roBkg-iPrbw)<br><sub>(41:11, YouTube, Nov/2021)</sub>
+| ![img](https://img.youtube.com/vi/WXuK6gekU1Y/default.jpg) | [__AlphaGo - The Movie / Full Documentary__](https://www.youtube.com/watch?v=WXuK6gekU1Y) |
+| ![img](https://img.youtube.com/vi/blQzi9EQ99c/default.jpg) | <sup>[Time2Chill]</sup><br>[__Console Wars 2020 Documentary__](https://www.youtube.com/watch?v=blQzi9EQ99c)<br><sub>(1:31:35, YouTube, Out/2020)</sub> |
+| ![img](https://img.youtube.com/vi/roBkg-iPrbw/default.jpg) | <sup>[Ahoy]</sup><br>[__Trackers: The Sound of 16-Bit__](https://www.youtube.com/watch?v=roBkg-iPrbw)<br><sub>(41:11, YouTube, Nov/2021)</sub> |
 
-<br>
+&nbsp;
 
 ## Vídeos Recomendados
 
 | Thumb | Descrição |
 | :-: | --- |
-| [![img](https://img.youtube.com/vi/n068fel-W9I/default.jpg)](https://www.youtube.com/watch?v=n068fel-W9I) | [MIT OpenCourseWare] <br> [__Special Lecture: F-22 Flight Controls__](https://www.youtube.com/watch?v=n068fel-W9I) (1:06:44, YouTube, Jan/2021)
+| [![img](https://img.youtube.com/vi/n068fel-W9I/default.jpg)](https://www.youtube.com/watch?v=n068fel-W9I) | [MIT OpenCourseWare]<br>[__Special Lecture: F-22 Flight Controls__](https://www.youtube.com/watch?v=n068fel-W9I) (1:06:44, YouTube, Jan/2021) |
 
 * [Filipe Deschamps] [Hackearam o Seu Cérebro](https://www.youtube.com/watch?v=_hobgOFDekg) (YouTube, 18:23)
 * [GAMEARANG] [The History of Blizzard Entertainment](https://www.youtube.com/watch?v=DMaSgwDgnPo) (YouTube, 57:53, Fev/2016)
 * [Gaming Historian] [A história de Super Mario Bros. 3](https://www.youtube.com/watch?v=MxT6IwUtLSU) (YouTube, 49:55, Dez/2019)
 * [Gaming Historian] [A história de Super Mario Bros. 2](https://www.youtube.com/watch?v=2EUYSN5aFcE) (YouTube, 23:58, Jul/2015)
 
-<br>
+&nbsp;
 
 ## Canais do YouTube Recomendados
 
 * [Code with Ania Kubów #JavaScriptGames](https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw)
 
-<br>
+* [Franks laboratory](https://www.youtube.com/@Frankslaboratory/videos)
+
+&nbsp;

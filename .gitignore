@@ -1,3 +1,5 @@
+.vscode
 *.exe
 [Pp]rivate/
-Vídeos/
+[Vv]ídeos/
+[Vv]ideos/

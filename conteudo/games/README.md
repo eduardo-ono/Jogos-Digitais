@@ -1,21 +1,26 @@
-> ### Jogos Digitais > Conteúdo
+<sup>Jogos Digitais</sup>
+<img alt="" width="100%" height="2px" align="right">
 
-# Games
+&nbsp;
 
-Prof. Eduardo Ono
+<h1 align="center">Games</h1>
+<h4 align="center">Prof. Eduardo Ono</h4>
+<h6 align="center">Atualizado em: 30/12/2024</h6>
 
-<br>
+&nbsp;
 
-## Índice (???)
+## Índice
 
-| [A] | B | [C] | [D] | E | [F] | [G] | H | I | J | K | [L] | M | N | O | P | Q | R | S | T | U | V | [W] | X | Y | Z |
+| [A] | [B] | [C] | [D] | E | [F] | [G] | H | I | J | K | [L] | M | N | O | [P] | Q | R | S | T | U | V | [W] | X | Y | Z |
 
 [A]: #a
+[B]: #b
 [C]: #c
 [D]: #d
 [F]: #f
 [G]: #g
 [L]: #l
+[p]: #p
 [W]: #w
 
 &nbsp;
@@ -26,6 +31,10 @@ Prof. Eduardo Ono
 
 * Age of Empires IV
 
+### B
+
+* Baldur's Gate
+
 ### C
 
 * CS:GO
@@ -35,6 +44,7 @@ Prof. Eduardo Ono
 * Diablo
 * Diablo 2
 * Diablo 3
+* Diablo 4
 * DOTA 2
 
 ### F
@@ -54,6 +64,10 @@ Prof. Eduardo Ono
 * [League of Legends (LoL)](https://www.leagueoflegends.com/pt-br/)
 * [Lost Ark](https://www.playlostark.com/pt-br)
 
+### P
+
+* [Pillars of Eternity](./titulos/pillars-of-eternity/)
+
 ### T
 
 * [Torchlight](https://www.torchlight1.com/en)
@@ -67,6 +81,6 @@ Prof. Eduardo Ono
 
 ## RPG
 
-* https://www.youtube.com/c/GameSharkBr
+* <https://www.youtube.com/c/GameSharkBr>
 
 &nbsp;
